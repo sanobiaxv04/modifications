@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
 
@@ -13,10 +14,10 @@
 <div class="top-bar">
   <span>FLAT 10% OFF for new customers</span>
   <div class="top-buttons">
-  <button class="shop-now"><a href="links/shopnow.html">Shop Now!</a></button>
+  <button class="shop-now"><a href="./shopnow.html">Shop Now!</a></button>
   
-    <a href="links/signup.html"><button class="auth-btn">Sign Up</button></a>
-    <a href="links/login.html"><button class="auth-btn">Login</button></a>
+    <a href="./signup.html"><button class="auth-btn">Sign Up</button></a>
+    <a href="./login.html"><button class="auth-btn">Login</button></a>
   </div>
 </div>
 <!----TOP BAR END---->
@@ -30,17 +31,17 @@
         <nav class="nav-links">
     <!-- <ul class="nav-links"> -->
         
-      <li class="highlight"><button>BARS Special offer</button></li>
-      <li><button><a href="home.html">Home</a></button></li>
-      <li><button><a href="bed.html">Bedroom</a></button></li>
-      <li><button><a href="livingroom.html">living-room</a></button></li>
-      <li><button><a href="wardrobes.html">Wardrobes</a></button></li>
-      <!-- <li><button>Wardrobes</button></li> -->
-      <li><button><a href="office.html">Office</a></button></li>
-      <li><button><a href="shopnow.html">Shop</a></button></li>
-      <li><button>Blog</button></li>
-      <li><button>About</button></li>
-      <li><button><a href="contact.html">contact us</a> </button></li>
+      <!-- <li class="highlight"><button>BARS Special offer</button></li> -->
+      <li><a class="highlight" href="home.html">Home</a></li>
+      <li><a href="bed.html" >Bedroom</a></li>
+      <li><a href="livingroom.html">living-room</a></li>
+      <li><a href="wardrobes.html">Wardrobes</a></li>
+      <!-- <li>Wardrobes</li> -->
+      <li><a href="office.html">Office</a></li>
+      <li><a href="shopnow.html">Shop</a></li>
+      <li>Blog</li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">contact us</a> </li>
 
   </nav>
     </header>
@@ -420,152 +421,138 @@
    
 
 <!-- slideshow -->
-<div class="slideshow-container">
-        <div class="slideshow auto-scroll">
-            <!-- Card 1 -->
-            <div class="card">
-                <div class="card-img" style="background-image:url(../image/bedroom.jpg);"></div>
-                <div class="card-content">
-                    <h3 class="card-title">modernistic beds</h3>
-                    <p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
-            
-            <!-- Card 2 -->
-            <div class="card">
-                <div class="card-img" style="background-image: url(../image/living-room\ \(3\).jpg);"></div>
-                <div class="card-content">
-                    <h3 class="card-title">living room essentials</h3>
-                    <p class="card-desc">Sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                </div>
-            </div>
-            
-            <!-- Card 3 -->
-            <div class="card">
-                <div class="card-img" style="background-image: url(../image/bedsetcor.img.jpg);"></div>
-                <div class="card-content">
-                    <h3 class="card-title">update your bedroom</h3>
-                    <p class="card-desc">Ut enim ad minim veniam, quis nostrud exercitation.</p>
-                </div>
-            </div>
-            
-            <!-- Card 4 -->
-            <div class="card">
-                <div class="card-img" style="background-image: url(../image/kitchen.jpg);"></div>
-                <div class="card-content">
-                    <h3 class="card-title">elevate your kitchen with beautiful wooden dining set
-                    </h3>
-                    <p class="card-desc">Duis aute irure dolor in reprehenderit in voluptate.</p>
-                </div>
-            </div>
-            
-            <!-- Card 5 -->
-            <div class="card">
-                <div class="card-img" style="background-image: url(../image/chairs.jpg);"></div>
-                <div class="card-content">
-                    <h3 class="card-title">fancy and durable chairs </h3>
-                    <p class="card-desc">Excepteur sint occaecat cupidatat non proident.</p>
-                </div>
-            </div>
-            
-            <!-- Card 6 -->
-            <div class="card">
-                <div class="card-img" style="background-image: url(../image/heroimage.jpg);"></div>
-                <div class="card-content">
-                    <h3 class="card-title">New L-Style sofa set.</h3>
-                    <p class="card-desc">Sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-            </div>
-            
-            <!-- Card 7 -->
-            <div class="card">
-                <div class="card-img" style="background-image: url(../image/dressing-room.jpg);"></div>
-                <div class="card-content">
-                    <h3 class="card-title">Customize your wardrobes.</h3>
-                    <p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
-            
-            <!-- Card 8 -->
-            <div class="card">
+   <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="card">
                 <div class="card-img" style="background-image: url(../image/closet.jpg);"></div>
                 <div class="card-content">
                     <h3 class="card-title">Enhance your storage area.</h3>
                     <p class="card-desc">Sed do eiusmod tempor incididunt ut labore et dolore.</p>
                 </div>
             </div>
-            
-            <!-- Card 9 -->
-            <div class="card">
-                <div class="card-img" style="background-image: url(../image/office.jpg);"></div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+                <div class="card-img" style="background-image: url(../image/bedroom.jpg);"></div>
                 <div class="card-content">
-                    <h3 class="card-title">Conference room table. </h3>
-                    <p class="card-desc">Ut enim ad minim veniam, quis nostrud exercitation.</p>
-                </div>
-            </div>
-            
-            <!-- Card 10 -->
-            <div class="card">
-                <div class="card-img" style="background-image: url(../image/office2.jpg);"></div>
-                <div class="card-content">
-                    <h3 class="card-title">Durable and modern office furniture.</h3>
-                    <p class="card-desc">Duis aute irure dolor in reprehenderit in voluptate.</p>
-                </div>
-            </div>
-            
-            <!-- Card 11 -->
-            <div class="card">
-                <div class="card-img" style="background-image: url(../image/decor.jpg);"></div>
-                <div class="card-content">
-                    <h3 class="card-title">Decoration items.</h3>
-                    <p class="card-desc">Excepteur sint occaecat cupidatat non proident.</p>
-                </div>
-            </div>
-            
-            <!-- Card 12 -->
-            <div class="card">
-                <div class="card-img" style="background-image: url(../image/decorkitchen.jpg);"></div>
-                <div class="card-content">
-                    <h3 class="card-title">Design your kitchen cabinets.</h3>
-                    <p class="card-desc">Sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-            </div>
-            
-            <!-- Card 13 -->
-            <div class="card">
-                <div class="card-img" style="background-image: url(../image/decordoor.jpg);"></div>
-                <div class="card-content">
-                    <h3 class="card-title">Door designs.</h3>
+                    <h3 class="card-title">Modernistic beds</h3>
                     <p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
             </div>
-            
-            <!-- Card 14 -->
-            <div class="card">
-                <div class="card-img" style="background-image: url(../image/bedsetcor.img.jpg);"></div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+                <div class="card-img" style="background-image: url(../image/living-room.jpg);"></div>
                 <div class="card-content">
-                    <h3 class="card-title">bed,side-tables and closet.</h3>
+                    <h3 class="card-title">Living room essentials</h3>
                     <p class="card-desc">Sed do eiusmod tempor incididunt ut labore et dolore.</p>
                 </div>
             </div>
-            
-            <!-- Card 15 -->
-            <div class="card">
-                <div class="card-img" style="background-image: url(../image/dressing-room.jpg);"></div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+                <div class="card-img" style="background-image: url(../image/bedsetcor.img.jpg);"></div>
                 <div class="card-content">
-                    <h3 class="card-title">New collection wardrobes.</h3>
+                    <h3 class="card-title">Update your bedroom</h3>
                     <p class="card-desc">Ut enim ad minim veniam, quis nostrud exercitation.</p>
                 </div>
             </div>
-        </div>
-        
-        <!-- Navigation arrows -->
-        <div class="arrow arrow-left" onclick="scrollLeft()">❮</div>
-        <div class="arrow arrow-right" onclick="scrollRight()">❯</div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+                <div class="card-img" style="background-image: url(../image/kitchen.jpg);"></div>
+                <div class="card-content">
+                    <h3 class="card-title">Elevate your kitchen with beautiful wooden dining set</h3>
+                    <p class="card-desc">Duis aute irure dolor in reprehenderit in voluptate.</p>
+                </div>
+            </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+                <div class="card-img" style="background-image: url(../image/chairs.jpg);"></div>
+                <div class="card-content">
+                    <h3 class="card-title">Fancy and durable chairs</h3>
+                    <p class="card-desc">Excepteur sint occaecat cupidatat non proident.</p>
+                </div>
+            </div>
+      </div>
+      <div class="swiper-slide">
+         <div class="card">
+                <div class="card-img" style="background-image: url(../image/heroimage.jpg);"></div>
+                <div class="card-content">
+                    <h3 class="card-title">New L-Style sofa set</h3>
+                    <p class="card-desc">Sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+      </div>
+      <div class="swiper-slide">
+         <div class="card">
+                <div class="card-img" style="background-image: url(../image/dressing-room.jpg);"></div>
+                <div class="card-content">
+                    <h3 class="card-title">Customize your wardrobes</h3>
+                    <p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+                <div class="card-img" style="background-image: url(../image/office.jpg);"></div>
+                <div class="card-content">
+                    <h3 class="card-title">Conference room table</h3>
+                    <p class="card-desc">Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                </div>
+            </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+                <div class="card-img" style="background-image: url(../image/decor.jpg);"></div>
+                <div class="card-content">
+                    <h3 class="card-title">Decoration items</h3>
+                    <p class="card-desc">Excepteur sint occaecat cupidatat non proident.</p>
+                </div>
+            </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+                <div class="card-img" style="background-image: url(../image/decorkitchen.jpg);"></div>
+                <div class="card-content">
+                    <h3 class="card-title">Design your kitchen cabinets</h3>
+                    <p class="card-desc">Sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+                <div class="card-img" style="background-image: url(../image/decordoor.jpg);"></div>
+                <div class="card-content">
+                    <h3 class="card-title">Door designs</h3>
+                    <p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+                <div class="card-img" style="background-image: url(../image/bedsetcor.img.jpg);"></div>
+                <div class="card-content">
+                    <h3 class="card-title">Bed, side-tables, and closet</h3>
+                    <p class="card-desc">Sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                </div>
+            </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+                <div class="card-img" style="background-image: url(../image/dressing-room.jpg);"></div>
+                <div class="card-content">
+                    <h3 class="card-title">New collection wardrobes</h3>
+                    <p class="card-desc">Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                </div>
+            </div>
+      </div>
     </div>
-    <!--  -->
- 
-
+    <div class="swiper-pagination"></div>
+    <div class="swiper-pagination"></div>
+</div>
 
     <!-- <footer> -->
         
@@ -689,7 +676,38 @@
   </div>  
 
 <!----FOOTER END---->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+  <!-- Initialize Swiper -->
+  <script>
+    let slidesPerView=5
+
+    if (window.matchMedia("(min-width: 1100px)").matches) {
+        slidesPerView=5;
+    }
+    else if (window.matchMedia("(min-width: 900px)").matches) {
+        slidesPerView=4;
+    }
+    else if (window.matchMedia("(min-width: 700px)").matches) {
+        slidesPerView=3;
+    }
+    else if (window.matchMedia("(min-width: 500px)").matches) {
+        slidesPerView=2;
+    }
+    else if (window.matchMedia("(min-width: 400px)").matches) {
+        slidesPerView=1;
+    }
+
+
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: slidesPerView,
+      spaceBetween: 0,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
 
 </body>
 </html>
